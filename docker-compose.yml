@@ -1,0 +1,13 @@
+---
+    version: '3'
+
+    services:
+      python:
+        image: python:3
+        working_dir: /python
+        ports:
+          - "9000:9000"
+        volumes:
+          - ./python:/python
+        entrypoint: ["./run.sh"]
+    
