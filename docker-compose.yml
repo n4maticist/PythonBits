@@ -4,10 +4,10 @@
     services:
       python:
         image: python:3
-        working_dir: /python
+        working_dir: /code
         ports:
           - "9000:9000"
         volumes:
-          - ./python:/python
+          - ./code:/code
         entrypoint: ["./run.sh"]
     
